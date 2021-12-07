@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_filter">滤镜</string>
+    <string name="movie_transfer">转场</string>
+    <string name="movie_music">音乐</string>
+    <string name="movie_next">下一步</string>
+    <string name="select_photos">选择图片</string>
+</resources>
