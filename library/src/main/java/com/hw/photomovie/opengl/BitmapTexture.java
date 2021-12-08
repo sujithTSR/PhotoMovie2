@@ -2,7 +2,6 @@ package com.hw.photomovie.opengl;
 
 import android.graphics.Bitmap;
 import android.opengl.GLES20;
-import junit.framework.Assert;
 
 import static com.hw.photomovie.util.GLUtil.NO_TEXTURE;
 
@@ -26,7 +25,7 @@ public class BitmapTexture extends UploadedTexture {
 
     public BitmapTexture(Bitmap bitmap, boolean hasBorder) {
         super(hasBorder);
-        Assert.assertTrue(bitmap != null && !bitmap.isRecycled());
+        assert (bitmap != null && !bitmap.isRecycled());
         mContentBitmap = bitmap;
         mIsRecycled = false;
     }

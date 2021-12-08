@@ -9,7 +9,6 @@ import android.opengl.Matrix;
 import com.hw.photomovie.util.IntArray;
 import com.hw.photomovie.util.MLog;
 import com.hw.photomovie.util.Utils;
-import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;
 import javax.microedition.khronos.opengles.GL11;
@@ -107,7 +106,7 @@ public class GLES11Canvas implements GLESCanvas {
 
     @Override
     public void setSize(int width, int height) {
-        Assert.assertTrue(width >= 0 && height >= 0);
+        assert (width >= 0 && height >= 0);
 
         if (mTargetTexture == null) {
             mScreenWidth = width;
@@ -135,7 +134,7 @@ public class GLES11Canvas implements GLESCanvas {
 
     @Override
     public void setAlpha(float alpha) {
-        Assert.assertTrue(alpha >= 0 && alpha <= 1);
+        assert (alpha >= 0 && alpha <= 1);
         mAlpha = alpha;
     }
 
@@ -146,7 +145,7 @@ public class GLES11Canvas implements GLESCanvas {
 
     @Override
     public void multiplyAlpha(float alpha) {
-        Assert.assertTrue(alpha >= 0 && alpha <= 1);
+        assert (alpha >= 0 && alpha <= 1);
         mAlpha *= alpha;
     }
 

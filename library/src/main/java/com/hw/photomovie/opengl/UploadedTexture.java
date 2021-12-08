@@ -3,7 +3,6 @@ package com.hw.photomovie.opengl;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.opengl.GLUtils;
-import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL11;
 import java.util.HashMap;
@@ -210,7 +209,7 @@ public abstract class UploadedTexture extends BasicTexture {
                 int texWidth = getTextureWidth();
                 int texHeight = getTextureHeight();
 
-                Assert.assertTrue(bWidth <= texWidth && bHeight <= texHeight);
+                assert (bWidth <= texWidth && bHeight <= texHeight);
 
                 // Upload the bitmap to a new texture.
                 mId = canvas.getGLId().generateTexture();
