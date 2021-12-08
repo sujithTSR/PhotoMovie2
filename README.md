@@ -1,3 +1,5 @@
+IMPORTANT NOTE:  Taken from a public repository to update for latest android version support
+
 [中文简介](https://blog.csdn.net/yellowcath/article/details/82664987)
 
 [PhotoMovie](https://github.com/yellowcath/PhotoMovie) can easily achieve the function of PhotoMovie like TikTok.
